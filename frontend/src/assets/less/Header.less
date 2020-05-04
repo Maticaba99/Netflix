@@ -1,4 +1,5 @@
 @import "./lib/__variables.less";
+@import "./lib/__buttons.less";
 
 .header__container {
   position: relative;
@@ -47,6 +48,7 @@
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.1em;
+  color: white;
 }
 .header__content--subTitle {
   font-weight: 400;
@@ -54,24 +56,7 @@
   line-height: 1.25em;
   margin: 0 0 1.875;
   text-transform: uppercase;
-}
-.header__content--button {
-  display: inline-block;
-  background: @main-red;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  margin: 0 33%;
-  padding: 1.5rem;
-  border-radius: 0.1875rem;
-  font-size: 2rem;
-  text-align: center;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  transition: background 0.2s ease-in;
-  cursor: pointer;
-  &:hover {
-    background: @main-red-hover;
-  }
+  color: white;
 }
 
 .Icon {

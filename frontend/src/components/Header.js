@@ -20,7 +20,7 @@ function Header() {
         <h2 className="header__content--subTitle">
           WATCH ANYWHERE, CANCEL ANYTIME.
         </h2>
-        <Link className="header__content--button">
+        <Link to="/" className="header__content--button btn-main">
           TRY IT NOW
           <IosArrowForward className="Icon" fontSize="37px" color="white" />
         </Link>

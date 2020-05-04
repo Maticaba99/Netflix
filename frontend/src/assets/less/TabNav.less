@@ -1,0 +1,188 @@
+@import "../less/lib/__variables.less";
+@import "../less/lib/__buttons.less";
+
+.Tabs {
+  width: 100vw;
+}
+.Tabs ul > li {
+  fill: @main-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tab-door {
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+.tab-devices {
+  width: 9.6875rem;
+  height: 9.6875rem;
+}
+.tab-price {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.Tabs__container {
+  padding-top: 1rem;
+}
+.Tabs__container--list {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  list-style: none;
+  color: @main-grey;
+  margin: 0 12%;
+}
+ul > li:hover {
+  cursor: pointer;
+  color: white;
+}
+ul > li:hover svg path {
+  fill: white;
+}
+.TabDevices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TabDevices > svg {
+  margin-top: 30px;
+}
+.TabDevices > p {
+  position: absolute;
+  margin-top: 35px;
+}
+
+.active {
+  border-bottom: 4px solid @main-red;
+}
+.active > svg,
+.active > p {
+  color: white;
+  fill: white;
+}
+
+.active.TabDevices svg {
+  margin-top: 27px;
+}
+
+// Tabs content
+
+.component__container {
+  background: @main-deep-dark;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component__container > div {
+  width: 100%;
+}
+.component__container img {
+  width: 31.875rem;
+}
+.component__container--tab {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 2.5rem;
+}
+.component__container--tab > div {
+  width: 50%;
+  text-align: center;
+}
+.component__container--tab.tabTwo > div {
+  width: 100%;
+}
+.container__tab--link {
+  margin-top: 50px;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+}
+.component__container--images {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 0 12%;
+  & > div > img {
+    width: 18.75rem;
+  }
+  & > div:nth-child(2) > img,
+  & > div:nth-child(3) > img {
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+  }
+}
+.tabThree span {
+  font-size: 1.5rem;
+}
+.tabThree > div > a {
+  margin: 0 5.1rem 0 3rem;
+}
+
+// Table
+
+.ant-table-content > table > thead th {
+  background-color: @main-deep-dark !important;
+  color: @main-grey;
+  border-bottom: none;
+  text-align: center;
+}
+
+.ant-table-content > table > tbody > tr > td {
+  color: @main-grey;
+  border-bottom: none;
+  text-align: center;
+}
+.ant-table-content > table > tbody > tr > td:nth-child(1) {
+  text-align: left;
+}
+.ant-table-content > table > tbody > tr:nth-child(odd) {
+  background-color: @main-deep-dark!important;
+  &:hover > td {
+    background: @main-deep-dark;
+  }
+}
+.ant-table-content > table > tbody > tr:nth-child(even) {
+  background-color: #222 !important;
+  &:hover > td {
+    background: #222;
+  }
+}
+.ant-pagination {
+  display: none;
+}
+.icons {
+  fill: @main-grey;
+  font-weight: bolder;
+}
+
+@media (max-width: 985px) {
+  .component__container--tab {
+    flex-direction: column-reverse;
+  }
+  .component__container--tab > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .component__container--images {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 100%;
+    }
+  }
+}
