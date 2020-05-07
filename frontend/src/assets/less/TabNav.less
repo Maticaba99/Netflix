@@ -13,8 +13,9 @@
 }
 
 .tab-door {
-  width: 2.8125rem;
-  height: 2.8125rem;
+  margin-top: 5px;
+  width: 4.375rem;
+  height: 4.375rem;
 }
 .tab-devices {
   width: 9.6875rem;
@@ -76,7 +77,6 @@ ul > li:hover svg path {
 
 .component__container {
   background: @main-deep-dark;
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,5 +184,58 @@ ul > li:hover svg path {
     & > div {
       width: 100%;
     }
+  }
+  .component__container img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .Tabs__container--list {
+    margin: 0 5%;
+  }
+  .tab-door {
+    width: 3.375rem;
+    height: 3.375rem;
+  }
+  .tab-devices {
+    width: 7.6875rem;
+    height: 7.6875rem;
+  }
+  .tab-price {
+    width: 3.375rem;
+    height: 3.375rem;
+  }
+  .TabDevices > p {
+    margin-top: 20px;
+  }
+  .TabDevices > svg {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .component__container img {
+    width: 15rem;
+  }
+  .component__container--tab span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 583px) {
+  .Tabs__container--list {
+    margin: 0;
+  }
+}
+
+@media (max-width: 485px) {
+  .container__tab--link {
+    margin: 20px 0 0 0;
+  }
+  .component__container--tab span {
+    font-size: 1.3rem;
+  }
+  .component__container--info.container-margin {
+    margin: 0;
   }
 }

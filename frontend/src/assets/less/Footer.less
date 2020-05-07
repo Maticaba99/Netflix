@@ -15,6 +15,7 @@
 }
 
 .Footer__container--columns {
+  margin-top: 15px;
   font-size: 0.9rem;
   width: 100%;
   display: flex;
@@ -37,8 +38,8 @@ ul {
 a {
   color: #999;
   &:hover {
-    color: #999;
-    text-decoration: underline;
+    color: #999 !important;
+    text-decoration: underline !important;
     cursor: pointer;
   }
 }
@@ -52,12 +53,14 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0 40px;
+  cursor: pointer;
 }
 
 .lang-toggle {
   position: absolute;
   margin-top: -40px;
   margin-bottom: 40px;
+
   & ul {
     background: @main-deep-dark;
     width: 8.125rem;
@@ -69,5 +72,15 @@ a {
       background: #0085ff;
       color: #fff;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .Footer__container--columns {
+    flex-wrap: wrap;
+  }
+  .Footer__container--columns ul {
+    width: 45%;
+    margin-left: 10px;
   }
 }

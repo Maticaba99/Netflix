@@ -20,7 +20,7 @@ function Footer() {
     <div className="Footer">
       <div className="Footer__container">
         <span>
-          Questions? <Link>Call 1-877-742-1335</Link>
+          <Link>Questions? Contact us.</Link>
         </span>
         <div className="Footer__container--columns">
           <ul>
@@ -98,7 +98,7 @@ function Footer() {
             </ul>
           </div>
         )}
-        <span>Netflix United States</span>
+        <span>Netflix Argentina</span>
       </div>
     </div>
   );

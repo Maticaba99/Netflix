@@ -16,9 +16,11 @@ function Header() {
         </NavLink>
       </div>
       <div className="header__content">
-        <h1 className="header__content--title">See what's next.</h1>
+        <h1 className="header__content--title">
+          Unlimited movies, TV shows, and more.
+        </h1>
         <h2 className="header__content--subTitle">
-          WATCH ANYWHERE, CANCEL ANYTIME.
+          Watch anywhere. Cancel anytime.
         </h2>
         <Link to="/" className="header__content--button btn-main">
           TRY IT NOW

@@ -5,27 +5,26 @@
   position: relative;
   height: 10rem;
   z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .header__container--logo {
-  width: 10rem;
-  height: 3.5rem;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: 4%;
+  margin-top: 30px;
+  height: 45px;
+  width: 167px;
 }
 .header__container--button {
   right: 0;
-  margin: 1.125rem 3% 0;
+  margin: 30px 3% 0;
   padding: 0.4375rem 1.0625rem;
   font-weight: 400;
   line-height: normal;
   border-radius: 0.1875rem;
   font-size: 1rem;
   background: @main-red;
-  position: absolute;
-  translate: transform(-50%, -50%);
   cursor: pointer;
   transition: background 0.2s ease-in;
   &:hover {
@@ -43,9 +42,14 @@
   flex-direction: column;
   z-index: 1;
 }
+.header__content--button.btn-main {
+  display: flex;
+  align-items: center;
+}
+
 .header__content--title {
   margin: 0 0 1.2rem;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.1em;
   color: white;
@@ -55,11 +59,73 @@
   font-size: 1.875rem;
   line-height: 1.25em;
   margin: 0 0 1.875;
-  text-transform: uppercase;
   color: white;
 }
 
 .Icon {
   vertical-align: bottom;
   margin-left: 1rem;
+}
+
+// LG Desktop
+@media (max-width: 1350px) {
+  .header__content--button.btn-main {
+    margin: 0 33%;
+    font-size: 1.5rem;
+  }
+}
+// M Desktop
+@media (max-width: 1150px) {
+  .header__content--button.btn-main {
+    margin: 0 25%;
+    font-size: 1.5rem;
+  }
+}
+// Tablet
+@media (max-width: 960px) {
+  /*   .header__container--logo {
+    height: 5rem;
+  } */
+  .header__content--button.btn-main {
+    margin: 0 20%;
+    font-size: 1.5rem;
+  }
+  .header__content--title {
+    font-size: 3.5rem;
+  }
+}
+// smTablet
+@media (max-width: 740px) {
+  .header__container--logo {
+    height: 3rem;
+    width: 140px;
+  }
+  .header__content--title {
+    font-size: 3rem;
+  }
+  .header__content--subTitle {
+    font-size: 1.6rem;
+  }
+  /*  .header__container--button {
+    margin-top: 1.25rem;
+    right: 5%;
+  } */
+  .header__content--button.btn-main {
+    margin: 0 10%;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 485px) {
+  .header__content--title {
+    font-size: 2.5rem;
+  }
+  .header__content--subTitle {
+    font-size: 1.4rem;
+  }
+  .header__content--button.btn-main {
+    margin: 0 10%;
+    padding: 7px 7px;
+    font-size: 1rem;
+  }
 }

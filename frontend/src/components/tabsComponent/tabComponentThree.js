@@ -8,8 +8,7 @@ function tabComponentThree() {
       <div>
         <div className="component__container--tab tabThree ">
           <div>
-            <span>Choose one plan and watch everything on Netflix.</span>
-
+            <span>Choose one plan and watch everything on Netflix.</span> <br />
             <Link to="/" className="container__tab--link btn-main">
               Try it now
             </Link>

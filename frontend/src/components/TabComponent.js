@@ -21,10 +21,7 @@ function TabComponent() {
           >
             <TabDoor />
             <p>
-              <strong>
-                No commitments <br />
-                Cancel online at anytime
-              </strong>
+              <strong>Cancel online at anytime</strong>
             </p>
           </Tab>
           <Tab
